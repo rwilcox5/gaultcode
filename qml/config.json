@@ -1,0 +1,8 @@
+{
+    "title": "Mission_Solitaire",
+    "identifier": "com.yourcompany.wizardMSML.MissionSolitaire",
+    "orientation": "landscape",
+    "versioncode": 1,
+    "versionname": "1.0",
+    "stage": "test"
+}
