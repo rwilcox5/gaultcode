@@ -3,8 +3,8 @@ import VPlay 2.0
 import "../common" as Common
 
 Common.LevelBase {
-    id: level2
-    levelName: "Level2"
+    id: level3
+    levelName: "Level3"
 
 
     turnCards: createCards([[4,2],[7,3],[10,3],[6,1],[8,1],[6,2],[7,0],[9,3]])
