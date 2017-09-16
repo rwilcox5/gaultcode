@@ -44,4 +44,5 @@ macx {
 }
 
 DISTFILES += \
-    qml/scenes/LevelEditorScene.qml
+    qml/scenes/LevelEditorScene.qml \
+    qml/levels/Level4.qml

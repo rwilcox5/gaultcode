@@ -54,6 +54,86 @@ SceneBase {
                 levelPressed("Level3.qml")
             }
         }
+        MenuButton {
+            text: "4"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level4.qml")
+            }
+        }
+        MenuButton {
+            text: "5"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level5.qml")
+            }
+        }
+        MenuButton {
+            text: "6"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level6.qml")
+            }
+        }
+        MenuButton {
+            text: "7"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level7.qml")
+            }
+        }
+        MenuButton {
+            text: "8"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level8.qml")
+            }
+        }
+        MenuButton {
+            text: "9"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level9.qml")
+            }
+        }
+        MenuButton {
+            text: "10"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level10.qml")
+            }
+        }
+        MenuButton {
+            text: "11"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level11.qml")
+            }
+        }
+        MenuButton {
+            text: "12"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level12.qml")
+            }
+        }
+        MenuButton {
+            text: "13"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level13.qml")
+            }
+        }
         Repeater {
             model: 10
             MenuButton {
