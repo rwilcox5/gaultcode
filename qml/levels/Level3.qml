@@ -3,44 +3,25 @@ import VPlay 2.0
 import "../common" as Common
 
 Common.LevelBase {
-    levelName: "Level3"
+    id: level2
+    levelName: "Level2"
 
-    Rectangle {
-        id: rectangle
-        color: "blue"
-        width: 100
-        height: 100
-        radius: 10
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.horizontalCenterOffset: 120
-        anchors.verticalCenter: parent.verticalCenter
-        MouseArea {
-            anchors.fill: parent
-            onPressed: rectanglePressed()
-        }
-    }
 
-    // SequentialAnimation plays all its child animations one after the other
-    // we are moving the rectangle by changing its horizontal offset from the center
-    SequentialAnimation {
-        running: true
-        // let it run forever
-        loops: Animation.Infinite
-        // move the rectangle left by changing the offset from current (120) to -120
-        NumberAnimation {
-            target: rectangle
-            duration: 1500
-            property: "anchors.horizontalCenterOffset"
-            easing.type: Easing.InOutQuad
-            to: -120
-        }
-        // after moving left has finished, we move the rectangle right by changing the offset from current (-120) to 120
-        NumberAnimation {
-            target: rectangle
-            duration: 1500
-            property: "anchors.horizontalCenterOffset"
-            easing.type: Easing.InOutQuad
-            to: 120
-        }
-    }
+    turnCards: createCards([[4,2],[7,3],[10,3],[6,1],[8,1],[6,2],[7,0],[9,3]])
+    stackCards: createStack([3,5,2,5])
+    property var col1Cards: createCards([[13,2],[12,1],[11,3],[10,1],[9,2],[8,0],[7,2]])
+    property var col2Cards: createCards([[13,1],[12,3],[11,1],[10,2],[9,0],[8,3]])
+    property var col3Cards: createCards([[13,3],[12,0],[11,2],[10,0]])
+    property var col4Cards: createCards([[13,0],[12,2],[11,0]])
+    property var col5Cards: createCards([[6,0,0],[5,2],[4,0],[3,2]])
+    property var col6Cards: createCards([[9,1],[8,2],[7,1],[6,3],[5,0]])
+    property var col7Cards: createCards([])
+
+    colCards: [col1Cards,col2Cards,col3Cards,col4Cards,col5Cards,col6Cards,col7Cards]
+    turnSpot: 0
+    turnDisplay: 3
+
+
+
+
 }
